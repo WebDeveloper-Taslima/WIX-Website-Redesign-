@@ -1,0 +1,196 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>ExchangeTrust — One Page Prototype</title>
+  <style>
+    :root{--accent:#0b4a6f;--muted:#6b7280;--card:#f8fafc}
+    *{box-sizing:border-box}
+    body{font-family:Inter,ui-sans-serif,system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial; margin:0; color:#0f1724}
+    header{background:#fff; border-bottom:1px solid #e6eef3; position:sticky; top:0; z-index:40}
+    .container{max-width:1100px; margin:0 auto; padding:28px}
+    .brand{display:flex;align-items:center;gap:16px}
+    .brand img{height:52px}
+    nav{margin-left:auto}
+    nav a{color:var(--muted); text-decoration:none; margin-left:18px; font-size:15px}
+    .hero{padding:60px 0; display:flex; gap:40px; align-items:center}
+    .hero-left{flex:1}
+    .badge{background:var(--card); display:inline-block; padding:6px 10px; border-radius:8px; font-size:13px; color:var(--accent); margin-bottom:12px}
+    h1{font-size:34px; margin:8px 0 12px}
+    p.lead{color:var(--muted); line-height:1.6}
+    .cta{margin-top:18px}
+    .btn{background:var(--accent); color:#fff; padding:12px 18px; border-radius:8px; text-decoration:none}
+
+    .stats{display:flex; gap:18px; margin-top:24px}
+    .stat{background:#fff; border:1px solid #eef6fa; padding:14px; border-radius:10px; min-width:140px}
+    .section{padding:54px 0}
+    .grid{display:grid; gap:18px}
+    .two-col{grid-template-columns:1fr 1fr}
+    .three-col{grid-template-columns:repeat(3,1fr)}
+
+    .projects .card{background:#fff; padding:18px; border-radius:10px; border:1px solid #eef6fa}
+    .projects .card h4{margin:8px 0 6px}
+    .projects .card p{color:var(--muted); font-size:14px}
+    .projects .card img{width:100%; border-radius:8px; margin-bottom:8px}
+
+    .testimonials{display:flex; gap:16px}
+    .testimonial{background:#fff; padding:18px; border-radius:10px; border:1px solid #eef6fa; flex:1}
+    .testimonial img{width:48px; height:48px; border-radius:50%; margin-bottom:8px}
+
+    footer{background:#f8fafc; padding:28px 0; border-top:1px solid #e6eef3}
+    .legal{font-size:13px; color:var(--muted)}
+
+    /* Responsive */
+    @media (max-width:880px){.hero{flex-direction:column}.three-col{grid-template-columns:1fr}.two-col{grid-template-columns:1fr}.testimonials{flex-direction:column}}
+  </style>
+</head>
+<body>
+  <header>
+    <div class="container" style="display:flex;align-items:center">
+      <div class="brand">
+        <img src="img/Logo.png" alt="ExchangeTrust logo">
+        <div style="font-size:14px">
+          <strong>ExchangeTrust</strong><br>
+          <span style="color:var(--muted); font-size:13px">Conservative. Compliant. Confident.</span>
+        </div>
+      </div>
+      <nav>
+        <a href="#vision">Vision</a>
+        <a href="#track-record">Track Record</a>
+        <a href="#projects">Projects</a>
+        <a href="#testimonials">Testimonials</a>
+        <a href="#legal">Legal</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container">
+    <section class="hero">
+      <div class="hero-left">
+        <div class="badge">Financial Services • South Africa</div>
+        <h1>Trusted custody and exchange services for institutional partners</h1>
+        <p class="lead">We provide robust asset custody, settlement and advisory services tailored for financial institutions, offering transparent processes and stringent compliance standards.</p>
+        <div class="cta">
+          <a class="btn" href="#contact">Get in touch</a>
+        </div>
+
+        <div class="stats">
+          <div class="stat"><strong>10+</strong><div style="font-size:13px;color:var(--muted)">Years of combined experience</div></div>
+          <div class="stat"><strong>6</strong><div style="font-size:13px;color:var(--muted)">Major projects completed</div></div>
+          <div class="stat"><strong>100%</strong><div style="font-size:13px;color:var(--muted)">Regulatory compliance</div></div>
+        </div>
+      </div>
+      <div style="flex:0.9; text-align:right">
+        <img src="https://images.unsplash.com/photo-1542744173-8e7e53415bb0?auto=format&fit=crop&w=600&q=80" alt="Finance team" style="max-width:380px; border-radius:12px">
+      </div>
+    </section>
+
+    <section id="vision" class="section">
+      <div class="two-col grid">
+        <div>
+          <h3>Vision &amp; Mission</h3>
+          <p style="color:var(--muted)">[Insert Vision &amp; Mission paragraphs — 2–3 short paragraphs recommended.]</p>
+        </div>
+        <div>
+          <h3>Code of Conduct</h3>
+          <p style="color:var(--muted)">[Short summary of Code of Conduct — link to full document below in Legal section]</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="track-record" class="section">
+      <h3>Track Record</h3>
+      <div style="color:var(--muted); margin-top:8px">A concise summary of key milestones and outcomes we've delivered for institutional clients.</div>
+      <ul style="margin-top:14px; color:var(--muted)">
+        <li>Successfully executed cross-border settlements for regulated partners.</li>
+        <li>Implemented AML/KYC frameworks aligned with local regulators.</li>
+        <li>Maintained uninterrupted custody operations during market volatility.</li>
+      </ul>
+    </section>
+
+    <section id="projects" class="section projects">
+      <h3 style="text-align: center;">Selected Projects</h3>
+      <div class="three-col grid" style="margin-top:16px">
+        <div class="card">
+          <img src="img/1.jpg" alt="Project Alpha">
+          <h4>Project Alpha</h4>
+          <p>Institutional custody implementation for a regional bank.</p>
+        </div>
+        <div class="card">
+          <img src="img/2.jpg" alt="Project Beta">
+          <h4>Project Beta</h4>
+          <p>Exchange integration and settlement automation for fintech partner.</p>
+        </div>
+        <div class="card">
+          <img src="img/3.jpg" alt="Project Gamma">
+          <h4>Project Gamma</h4>
+          <p>Compliance program rollout and training for corporate client.</p>
+        </div>
+        <div class="card">
+          <img src="img/4.jpg" alt="Project Delta">
+          <h4>Project Delta</h4>
+          <p>Cross-border remittance settlement engine integration.</p>
+        </div>
+        <div class="card">
+          <img src="img/5.jpg" alt="Project Epsilon">
+          <h4>Project Epsilon</h4>
+          <p>Custody migration and secure key management design.</p>
+        </div>
+        <div class="card">
+          <img src="img/6.jpg" alt="Project Zeta">
+          <h4>Project Zeta</h4>
+          <p>Continuous monitoring and reporting dashboards for regulators.</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="testimonials" class="section">
+      <h3 style="text-align: center;">Client Testimonials</h3>
+      <div class="testimonials" style="margin-top:16px">
+        <div class="testimonial">
+          <img src="https://randomuser.me/api/portraits/men/45.jpg" alt="Client">
+          <strong>Senior Partner, BankCorp</strong>
+          <p style="color:var(--muted); margin-top:8px">"ExchangeTrust delivered exceptional operational resilience and compliance support during our integration."</p>
+        </div>
+        <div class="testimonial">
+          <img src="https://randomuser.me/api/portraits/women/65.jpg" alt="Client">
+          <strong>CEO, FintechCo</strong>
+          <p style="color:var(--muted); margin-top:8px">"Professional, reliable, and meticulous in their governance approach."</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact" class="section">
+      <h3 style="text-align: center;">Contact &amp; Engagement</h3>
+      <div class="two-col grid" style="align-items:center">
+        <div>
+          <p style="color:var(--muted)">For inquiries, please email: <a href="mailto:info@exchangetrust.co.za">info@exchangetrust.co.za</a> or use your Wix contact form.</p>
+          <p style="color:var(--muted)">We can work as collaborators on your Wix site — please invite the developer account to access the site (Wix -> Settings -> Roles & Permissions -> Invite People).</p>
+        </div>
+        <div>
+          <img style="width: 500px;height: 200px;" src="img/7.jpg" alt="Office" style="max-width:160px; border-radius:8px">
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="container">
+      <div style="display:flex; gap:18px; align-items:flex-start; justify-content:space-between">
+        <div>
+          <strong>ExchangeTrust</strong>
+          <div class="legal" style="margin-top:8px">Vision &amp; Mission • Track Record • Testimonials</div>
+        </div>
+        <img style="width: 150px;height: 50px;" src="img/Logo.png" alt="">
+        <div style="text-align:right">
+          <div class="legal">Terms &amp; Conditions | Code of Conduct</div>
+          <div class="legal" style="margin-top:8px">© ExchangeTrust — All rights reserved</div>
+        </div>
+      </div>
+    </div>
+  </footer>
+</body>
+</html>
+
+
